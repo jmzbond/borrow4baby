@@ -6,9 +6,6 @@ gem 'rails', '4.0.2'
 gem 'bootstrap-sass', '3.0.3.0'
 gem 'newrelic_rpm'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -35,6 +32,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development do 
+# Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
