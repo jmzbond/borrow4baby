@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Babies</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class ="fill" style="background-image: url(<%= asset_path 'baby.jpg' %>);">
+<!--source: http://www.hdwallpapersin.com/files/submissions/Child_Girl_Bear_Toy_Autumn_Leaves_Nature_Photo_HD_Wallpaper_1395004946.jpg-->
+<%= yield %>
+
+</body>
+</html>
