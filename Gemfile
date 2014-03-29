@@ -36,6 +36,11 @@ group :development do
 # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
 end
+
+group :production do
+  gem 'pg', '0.15.1'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
